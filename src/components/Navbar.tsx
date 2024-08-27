@@ -3,6 +3,8 @@ import { ConnectWallet } from "@thirdweb-dev/react";
 import thirdwebIcon from "../thirdweb.svg";
 import {client} from "../client"
 import { NavLink, useNavigate } from "react-router-dom";
+import wallet from "../images/wallet.png"
+import logo from "../images/default.svg"
 
 export default function NavBar() {
 	const navigate = useNavigate()
@@ -48,11 +50,13 @@ export default function NavBar() {
             </div>
 
 			<div className="connect">
+				{/* <img src={wallet} alt="" /> */}
 					<ConnectButton client={client} connectButton={{
 						style:{
 							color: "white",
 							backgroundColor: "#0070d2"
-						}
+						},
+						label: "Connect Wallet"
 					}}
 					
 					/>

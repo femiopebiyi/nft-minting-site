@@ -12,7 +12,7 @@ const Home = () => {
     <div className="home-page">
       <div className="home-con">
         <div className="home-text">
-            <h1>Discover & collect NFT artwork</h1>
+            <h1>Discover & Collect NFT Artwork</h1>
             <div className="home-btn">
                 <button>mint</button>
                 <button>claim</button>
