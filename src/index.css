@@ -85,7 +85,7 @@
   top: -6px;
   left: -7px;
   background: #000;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .BorderTopBottom:after {
@@ -96,7 +96,7 @@
   bottom: -6px;
   right: -7px;
   background: #000;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .BorderLeftRight:before {
@@ -107,7 +107,7 @@
   width: 3px;
   height: 25px;
   background: #000;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .BorderLeftRight:after {
@@ -118,19 +118,19 @@
   width: 3px;
   height: 25px;
   background: #000;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .btn:hover .BorderTopBottom:before,
 .btn:hover .BorderTopBottom:after {
   width: 162px;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .btn:hover .BorderLeftRight:before,
 .btn:hover .BorderLeftRight:after {
   height: 47px;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 .connect{
 
@@ -174,9 +174,14 @@
     line-height: 1.5em;
 }
 
-.home-img img{
+.home-img{
   
+}
+
+.home-img img{
+
   width: 400px !important;
+  filter: drop-shadow(5px 10px 13px #fff);
 }
 
 .home-btn{
