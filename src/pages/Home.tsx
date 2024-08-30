@@ -11,6 +11,7 @@ import nft from "../images/nft_01.jpg"
 import MintSlide from "../components/Mint_slide"
 import {BsArrowLeftCircleFill, BsArrowRightCircleFill, BsXSquareFill} from "react-icons/bs"
 import {useState} from "react"
+import About from "../components/About"
 
 
 
@@ -63,6 +64,12 @@ function nextSlide(){
          <BsArrowRightCircleFill className="arrow arrow-right" onClick = {nextSlide}/>
          <BsXSquareFill className="cancel-btn" onClick={()=>setShowCard(!showCard)}/>
       </div>
+
+
+
+      <section className="about">
+        <About/>
+      </section>
     </div>
   )
 }

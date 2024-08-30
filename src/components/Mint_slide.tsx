@@ -51,9 +51,8 @@ const [ownedId, setownedId] = useState(0)
         onSuccess={()=> alert("claimed")}
         isDisabled={ownedNfts?.some((nft) => nft.metadata.id === nfts.metadata.id)}
         >
-          {ownedNfts?.map((nft)=>{
-            return nft.metadata.id === nfts.metadata.id ? "MINTED": "MINT NOW"
-          })}
+          {ownedNfts?.some((nft) => nft.metadata.id === nfts.metadata.id) ? "MINTED" : "MINT NOW"}
+
         </Web3Button>
         
       </div>
