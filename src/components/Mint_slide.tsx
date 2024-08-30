@@ -4,7 +4,7 @@ import { ThirdwebNftMedia, useAddress, useContract, useOwnedNFTs, Web3Button } f
 import { ERC1155_ADDY, ERC721_ADDY } from "../constants/adresses"
 import { useActiveAccount } from "thirdweb/react"
 import { useEffect, useState } from "react"
-
+import {BsXSquare, BsXSquareFill} from "react-icons/bs"
 
 
 
@@ -20,11 +20,7 @@ const {contract} = useContract(ERC1155_ADDY)
 const {data: ownedNfts, isLoading: ownedNFTsIsLoading} = useOwnedNFTs(contract, addy)
 const [ownedId, setownedId] = useState(0)
 
-useEffect(()=>{
-  ownedNfts?.forEach((nft, index)=>{
 
-  })
-},[])
 
   return (
       <div className="mint">
@@ -55,7 +51,7 @@ useEffect(()=>{
         onSuccess={()=> alert("claimed")}
         isDisabled={ownedNfts?.some((nft) => nft.metadata.id === nfts.metadata.id)}
         >
-          {ownedNfts?.map((nft, index)=>{
+          {ownedNfts?.map((nft)=>{
             return nft.metadata.id === nfts.metadata.id ? "MINTED": "MINT NOW"
           })}
         </Web3Button>

@@ -9,7 +9,7 @@ import { ThirdwebNftMedia, useContract, useNFTs } from "@thirdweb-dev/react"
 import { ERC1155_ADDY, ERC721_ADDY } from "../constants/adresses"
 import nft from "../images/nft_01.jpg"
 import MintSlide from "../components/Mint_slide"
-import {BsArrowLeftCircleFill, BsArrowRightCircleFill} from "react-icons/bs"
+import {BsArrowLeftCircleFill, BsArrowRightCircleFill, BsXSquareFill} from "react-icons/bs"
 import {useState} from "react"
 
 
@@ -20,6 +20,7 @@ const Home = () => {
 
 
 const [slide, setSlide] = useState(0)
+const [showCard, setShowCard] = useState(false)
 
 function prevSlide(){
   if(!data) return
@@ -36,7 +37,7 @@ function nextSlide(){
         <div className="home-text">
             <h1>Discover & Collect NFT Artwork</h1>
             <div className="home-btn">
-                <button>mint</button>
+                <button onClick={()=> setShowCard(!showCard)}>mint</button>
                 <button>Join Waitlist</button>
             </div>
         </div>
@@ -47,7 +48,11 @@ function nextSlide(){
       <div>
       </div>
 
-      <div className="slides">
+      <div className="slides" 
+      style={{
+        display: showCard ? "flex" : "none"
+      }}
+      >
         <BsArrowLeftCircleFill className="arrow arrow-left" onClick = {prevSlide}/>
           {isLoading ? (<p>Loading</p>):
           ( data?.map((nft, index)=>{
@@ -56,6 +61,7 @@ function nextSlide(){
           </div>
         }))}
          <BsArrowRightCircleFill className="arrow arrow-right" onClick = {nextSlide}/>
+         <BsXSquareFill className="cancel-btn" onClick={()=>setShowCard(!showCard)}/>
       </div>
     </div>
   )
