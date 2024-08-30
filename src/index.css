@@ -141,6 +141,12 @@
   overflow: hidden;
   border-radius: 8px; */
 }
+.connect-btn{
+  background-color: #0070d2 !important;
+  border: 1px solid red !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
 .connect img{
   width: 24px;
   margin-left: 4em;
@@ -224,3 +230,105 @@
   transform: translateY(-2px);
 }
 
+
+.mint{
+  /* border: 1px solid red; */
+  
+  background-color: white;
+  
+  width: 500px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 1em 0;
+  
+}
+
+.mint h1{
+  font-size: 1.5rem;
+}
+
+.deets{
+  width: 90%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nft-img{
+  width: 60%;
+}
+
+.nft-img img{
+  width: 100%;
+}
+
+.slides{
+  display: flex;
+  position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    
+    width: 500px;
+    
+}
+
+.arrow{
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  color: black;
+  top: 45%;
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
+
+
+.arrow-left{
+  left: 1rem;
+}
+
+.arrow-right{
+  right: 1rem
+}
+
+.slide-hidden{
+  display: none;
+}
+
+.arrow:hover>* {
+  animation: squish 200ms ease-in-out;
+}
+
+@keyframes squish {
+    50%{
+        scale: 1.4 .6;
+    }
+}
+
+.mint button{
+   width: 90%;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+   border-radius: 5px;
+    background-color: #0070d2;
+    font-size: 14px;
+    letter-spacing: 0.16px;
+    min-height: 50px;
+    line-height: 1.29;
+    color: #fff;
+    font-weight: bold;
+    transition: background 70ms cubic-bezier(0, 0, .38, .9), box-shadow 70ms cubic-bezier(0, 0, .38, .9), border-color 70ms cubic-bezier(0, 0, .38, .9), outline 70ms cubic-bezier(0, 0, .38, .9);
+  
+    
+}
+
+.mint button:hover {
+  background-color: #0353e9;
+}

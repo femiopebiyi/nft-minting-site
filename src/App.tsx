@@ -10,13 +10,6 @@ import Home from "./pages/Home";
 
 
 export  function App() {
-
-	const connectionStatus = useActiveWalletConnectionStatus()
-	const addy = useActiveAccount()
-
-	const {contract} = useContract("0x18b19bc15E3fE79251D352596fDCC33AaF4bfB30")
-  const {data, isLoading} = useContractMetadata(contract)
-
 	
 	return (
 		<div className="home">

@@ -51,13 +51,7 @@ export default function NavBar() {
 
 			<div className="connect">
 				{/* <img src={wallet} alt="" /> */}
-					<ConnectButton client={client} connectButton={{
-						style:{
-							color: "white",
-							backgroundColor: "#0070d2"
-						},
-						label: "Connect Wallet"
-					}}
+					<ConnectWallet
 					
 					/>
 				</div>
