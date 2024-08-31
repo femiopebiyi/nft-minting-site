@@ -12,6 +12,7 @@ import MintSlide from "../components/Mint_slide"
 import {BsArrowLeftCircleFill, BsArrowRightCircleFill, BsXSquareFill} from "react-icons/bs"
 import {useState} from "react"
 import About from "../components/About"
+import Team from "../components/Team"
 
 
 
@@ -33,7 +34,7 @@ function nextSlide(){
 }
 
   return (
-    <div className="home-page">
+    <div className="home-page" id="home">
       <div className="home-con">
         <div className="home-text">
             <h1>Discover & Collect NFT Artwork</h1>
@@ -69,7 +70,20 @@ function nextSlide(){
 
       <section className="about">
         <About/>
+
+
+
+        <section className="team">
+        <div className="meet">
+          <h2>team</h2>
+        <h1>meet the team</h1>
+        </div>
+        <Team/>
       </section>
+      </section>
+
+
+      
     </div>
   )
 }

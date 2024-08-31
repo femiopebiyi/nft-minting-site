@@ -26,28 +26,47 @@ export default function NavBar() {
 			/>
 
             <div className="links">
-                <div className="btn">
-						<NavLink to="/" className="link">Home</NavLink>
-						<span className="BorderTopBottom"></span>
-						<span className="BorderLeftRight"></span>
-					</div>
-					<div className="btn">
-						<NavLink to="/about" className="link">About</NavLink>
-						<span className="BorderTopBottom"></span>
-						<span className="BorderLeftRight"></span>
-					</div>
-					<div className="btn">
-						<NavLink to="/roadmap" className="link">Roadmap</NavLink>
-						<span className="BorderTopBottom"></span>
-						<span className="BorderLeftRight"></span>
-					</div>
-					<div className="btn">
-						<NavLink to="/team" className="link">Team</NavLink>
-						<span className="BorderTopBottom"></span>
-						<span className="BorderLeftRight"></span>
-					</div>
-
-            </div>
+    <div className="btn" onClick={() => {
+        const element = document.getElementById('home');
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }}>
+        <a href="#home" className="link">Home</a>
+        <span className="BorderTopBottom"></span>
+        <span className="BorderLeftRight"></span>
+    </div>
+    <div className="btn" onClick={() => {
+        const element = document.getElementById('about');
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }}>
+        <a href="#about" className="link">About</a>
+        <span className="BorderTopBottom"></span>
+        <span className="BorderLeftRight"></span>
+    </div>
+    <div className="btn" onClick={() => {
+        const element = document.getElementById('roadmap');
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }}>
+        <a href="#roadmap" className="link">Roadmap</a>
+        <span className="BorderTopBottom"></span>
+        <span className="BorderLeftRight"></span>
+    </div>
+    <div className="btn" onClick={() => {
+        const element = document.getElementById('team');
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }}>
+        <a href="#team" className="link">Team</a>
+        <span className="BorderTopBottom"></span>
+        <span className="BorderLeftRight"></span>
+    </div>
+</div>
 
 			<div className="connect">
 				{/* <img src={wallet} alt="" /> */}

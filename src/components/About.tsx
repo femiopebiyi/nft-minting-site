@@ -18,7 +18,7 @@ export default function About(){
 
     return (
     <>
-        <div className="about-con">
+        <div className="about-con" id="about">
             <div className="about-main">
                 <h2> our story</h2>
                 <h1>About Us</h1>
