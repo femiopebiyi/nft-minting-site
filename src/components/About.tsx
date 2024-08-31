@@ -1,11 +1,23 @@
+import { useContract, useNFTs, useTotalCirculatingSupply, useClaimedNFTSupply, useTotalCount } from "@thirdweb-dev/react"
+import { ERC1155_ADDY } from "../constants/adresses"
+import { useEffect, useState } from "react";
+import { BigNumber } from "ethers";
+import NFT_slider from "./NFT_slider";
 
 
 
 export default function About(){
     const source = "https://aenft-react.netlify.app/images/about_img.svg"
+    const {contract} = useContract(ERC1155_ADDY)
+    const { data: totalNFTS, isLoading: totalNFTsLoading, error } = useNFTs(contract);
+    const { data, isLoading } = useClaimedNFTSupply(contract);
+
+     
+    
 
 
     return (
+    <>
         <div className="about-con">
             <div className="about-main">
                 <h2> our story</h2>
@@ -20,5 +32,31 @@ export default function About(){
                 <img src={source} alt="about pic" />
             </div>
         </div>
+
+        <div className="supplies">
+        <div className="supply">
+                <h1>{totalNFTsLoading ? "Loading..." :  `${totalNFTS?.length}` }</h1>
+                <h3>Total Items</h3>
+        </div>
+        <div className="supply">
+                <h1>37</h1>
+                <h3>Total Owners</h3>
+        </div>
+        <div className="supply">
+                <h1>0.001</h1>
+                <h3>Floor Price</h3>
+        </div>
+        <div className="supply">
+                <h1>43.4</h1>
+                <h3>Volume Traded</h3>
+        </div>
+        </div>
+
+
+        <div className="slider-con">
+            <h1 className="our">Our Collection</h1>
+            <NFT_slider/>
+        </div>
+        </>
     )
 }
