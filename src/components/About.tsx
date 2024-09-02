@@ -3,6 +3,8 @@ import { ERC1155_ADDY } from "../constants/adresses"
 import { useEffect, useState } from "react";
 import { BigNumber } from "ethers";
 import NFT_slider from "./NFT_slider";
+import { EmblaOptionsType } from 'embla-carousel'
+
 
 
 
@@ -12,7 +14,9 @@ export default function About(){
     const { data: totalNFTS, isLoading: totalNFTsLoading, error } = useNFTs(contract);
     const { data, isLoading } = useClaimedNFTSupply(contract);
 
-     
+     const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true }
+const SLIDE_COUNT = 5
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
     
 
 
@@ -55,7 +59,7 @@ export default function About(){
 
         <div className="slider-con">
             <h1 className="our">Our Collection</h1>
-            <NFT_slider/>
+            <NFT_slider slides={SLIDES} options={OPTIONS}/>
         </div>
         </>
     )

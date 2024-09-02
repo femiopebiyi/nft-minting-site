@@ -451,28 +451,26 @@ html{
 }
 
 .slider-con{
-  width: 94%;
+  width: 96%;
   margin:  4rem auto 0 auto;
   
   
 }
 
-.slider-card{
-  
-  width: 300px;
-  height: 500px;
-  
+
+.slide-div{
+  border: 1px solid green;
+  width: 100%;
 }
 
 .slider-card h2{
   font-weight: bold;
 }
 .slider-card img{
-  width: 100% !important;
+ width: 100% !important;
   object-fit: cover !important;
-  height: 100% !important;
-  margin-top: 1em;
-  max-height: 450% !important;
+  height: 500px !important;
+  min-width: 250px !important;
 }
 
 .our{
@@ -559,4 +557,15 @@ html{
   font-size: 2rem;
   font-weight: bold;
   text-transform: capitalize;
+}
+
+
+.slick-next::before{
+  color: black !important;
+  background: none !important;
+}
+
+.slick-prev::before{
+  color: black !important;
+    background: none !important;
 }
