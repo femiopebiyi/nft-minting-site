@@ -59,7 +59,7 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
         <div className="slider-con">
             <h1 className="our">Our Collection</h1>
-            <NFT_slider slides={SLIDES} options={OPTIONS}/>
+            <NFT_slider/>
         </div>
         </>
     )
