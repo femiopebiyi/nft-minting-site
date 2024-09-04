@@ -13,6 +13,7 @@ import {BsArrowLeftCircleFill, BsArrowRightCircleFill, BsXSquareFill} from "reac
 import {useState} from "react"
 import About from "../components/About"
 import Team from "../components/Team"
+import Roadmap from "../components/Roadmap"
 
 
 
@@ -73,13 +74,18 @@ function nextSlide(){
 
 
 
-        <section className="team">
-        <div className="meet">
-          <h2>team</h2>
-        <h1>meet the team</h1>
-        </div>
-        <Team/>
-      </section>
+          <section className="team">
+            <div className="meet">
+              <h2>team</h2>
+            <h1>meet the team</h1>
+            </div>
+            <Team/>
+        </section>
+
+
+        <section className = "roadmap">
+          <Roadmap/>
+        </section>
       </section>
 
 

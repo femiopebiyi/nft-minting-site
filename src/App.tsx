@@ -1,4 +1,4 @@
-import { ConnectButton, useActiveAccount, useActiveWallet, useActiveWalletConnectionStatus} from "thirdweb/react";
+
 import thirdwebIcon from "./thirdweb.svg";
 import { client } from "./client";
 import {  ConnectWallet, useContract, useContractMetadata} from "@thirdweb-dev/react";

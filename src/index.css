@@ -569,3 +569,17 @@ html{
   color: black !important;
     background: none !important;
 }
+
+.roadmap{
+  border: 1px solid red;
+  width: 90%;
+  margin: 3rem auto 0 auto;
+}
+
+.roadmap-phase{
+  border: 1px solid green;
+  
+  height: 300px;
+  background-color: white;
+  padding: 1.5em;
+}
