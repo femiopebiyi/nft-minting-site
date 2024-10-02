@@ -599,3 +599,23 @@ html{
   font-size: 1.4rem;
   font-weight: bold;
 }
+
+.contact{
+  width: 90%;
+  margin: 3rem auto 0 auto;
+  border: 1px solid red;
+}
+
+.contact-head h2{
+  text-transform: uppercase;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#bfa3da, #84309c, #c735b0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.2rem;
+}
+.contact-head h1{
+  font-size: 2rem;
+  font-weight: bold;
+}

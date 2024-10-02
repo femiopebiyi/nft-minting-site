@@ -14,6 +14,7 @@ import {useState} from "react"
 import About from "../components/About"
 import Team from "../components/Team"
 import Roadmap from "../components/Roadmap"
+import Contact from "../components/Contact"
 
 
 
@@ -85,6 +86,11 @@ function nextSlide(){
 
         <section className = "roadmap">
           <Roadmap/>
+        </section>
+
+
+        <section className="contact">
+          <Contact/>
         </section>
       </section>
 
