@@ -1,5 +1,5 @@
 import { ThirdwebNftMedia, useContract, useNFTs } from "@thirdweb-dev/react";
-import { ERC1155_ADDY } from "../constants/adresses";
+import { ERC1155_ADDY } from "./constants/adresses";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

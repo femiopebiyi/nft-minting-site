@@ -1,7 +1,7 @@
 import { NFT } from "@thirdweb-dev/sdk"
 import nft from "../images/nft_01.jpg"
 import { ThirdwebNftMedia, useAddress, useContract, useOwnedNFTs, Web3Button } from "@thirdweb-dev/react"
-import { ERC1155_ADDY, ERC721_ADDY } from "../constants/adresses"
+import { ERC1155_ADDY, ERC721_ADDY } from "./constants/adresses"
 import { useActiveAccount } from "thirdweb/react"
 import { useEffect, useState } from "react"
 import {BsXSquare, BsXSquareFill} from "react-icons/bs"

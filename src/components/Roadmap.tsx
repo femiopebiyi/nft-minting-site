@@ -1,5 +1,5 @@
 import Slider from "react-slick";
-import { roadmapDetails } from "../constants/roadmap_deet";
+import { roadmapDetails } from "./constants/roadmap_deet";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 

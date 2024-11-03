@@ -619,3 +619,101 @@ html{
   font-size: 2rem;
   font-weight: bold;
 }
+
+.contact-me{
+  /* border: 1px solid green; */
+  display: flex;
+  width: 100%;
+  margin: 3rem auto 0 auto;
+  justify-content: space-between;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+  
+  width: 50%;
+  gap: 25px;
+  
+}
+
+.name-mail{
+  display: flex;
+  justify-content: space-between;
+}
+.name-mail > *{
+  width: 48%;
+}
+
+.input input{
+  padding: 1.2em 1em;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #DBDFE3;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.input input::placeholder{
+  font-weight: bold;
+}
+
+.input textarea{
+  resize: none;
+  height: 200px;
+  border-radius: 10px;
+  background: transparent;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    outline: none;
+    border: 1px solid #DBDFE3;
+}
+
+.input button{
+
+  padding: 1em 0;
+  background-color: #0070d2;
+  color: white;
+  font-weight: bold;
+}
+
+.input input:focus{
+  border-color: #DBDFE3;
+}
+
+.contact-info{
+  /* border: 1px solid blue; */
+  width: 40%;
+}
+
+#contact-info{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.call{
+  margin-top: 2em;
+  display: flex;
+  /* border: 1px solid black; */
+  align-items: flex-start;
+}
+.call h1{
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.call h2{
+  font-size: 1.3rem;
+
+}
+
+.call img{
+  width: 36px;
+  display: inline;
+}
+
+.call img{
+  
+  
+}
+.call div{
+margin-left: 1.5rem;
+}

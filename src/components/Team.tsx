@@ -1,4 +1,4 @@
-import { teamDetails } from "../constants/teams"
+import { teamDetails } from "./constants/teams"
 import { BsFacebook, BsLinkedin, BsWhatsapp} from "react-icons/bs"
 
 
